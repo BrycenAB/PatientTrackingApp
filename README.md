@@ -35,7 +35,7 @@ To run the Patient Tracker application locally, follow these steps:
   ```bash
   python app.py
 ```
-The application will be accessible at http://localhost:5000/register. (will be w/o 'register' once the homepage is done)
+The application will be accessible at http://localhost:5000/
 
 ## Project Structure
 
