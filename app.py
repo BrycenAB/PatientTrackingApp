@@ -21,6 +21,11 @@ def test():
     return jsonify(result)
 
 
+@app.route('/')
+def home():
+    return render_template('home.html')
+
+
 @app.route('/patients', methods=['POST'])
 def create_patient():
     print("in create patient")

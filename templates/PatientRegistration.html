@@ -11,14 +11,14 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column; /* Added to arrange elements vertically */
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
         }
 
-        /* Added banner style */
         #banner {
+            position: relative;
             background-color: #3498db;
             color: white;
             padding: 10px;
@@ -27,13 +27,21 @@
             font-size: 24px;
         }
 
+        #home-link {
+            position: absolute;
+            left: 10px;
+            bottom: 5px;
+            margin: 0;
+            font-size: 12px;
+        }
+
         form {
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             padding: 20px;
             width: 300px;
-            margin-top: 20px; /* Adjusted margin to separate the form from the banner */
+            margin-top: 20px;
         }
 
         h2 {
@@ -73,10 +81,11 @@
     </style>
 </head>
 <body>
-    <!-- Added banner div -->
     <div id="banner">
         Patient Portal
+        <a id="home-link" href="/">Go back to home</a>
     </div>
+
 
     <form action="/register" method="post">
         <h2>Patient Registration</h2>
