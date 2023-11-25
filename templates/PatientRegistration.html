@@ -1,0 +1,115 @@
+<!-- PatientRegistration.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Added to arrange elements vertically */
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        /* Added banner style */
+        #banner {
+            background-color: #3498db;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            font-size: 24px;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            margin-top: 20px; /* Adjusted margin to separate the form from the banner */
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <!-- Added banner div -->
+    <div id="banner">
+        Patient Portal
+    </div>
+
+    <form action="/register" method="post">
+        <h2>Patient Registration</h2>
+
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="medical_history">Medical History:</label>
+        <textarea id="medical_history" name="medical_history" required></textarea>
+
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
