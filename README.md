@@ -42,10 +42,6 @@ The application will be accessible at http://localhost:5000/
 - 'app.py': The main Python script containing the Flask application and database configuration.
 - 'templates/': Directory for HTML templates.
 
-## Contributing
-
-Contributions to the Patient Tracker application are welcome! Feel free to reach out to me at brycen.bowers01@gmail.com
-
 ## License
 
 This project is licensed under the MIT License.
